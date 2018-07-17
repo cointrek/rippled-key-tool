@@ -1,6 +1,7 @@
 export KEY_TOOL_DIR=~/rippled-key-tool
 
 cd ${KEY_TOOL_DIR}
+mkdir bin
 git submodule update --init --recursive
 
 cd ${KEY_TOOL_DIR}/validator-keys-tool
