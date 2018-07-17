@@ -1,0 +1,3 @@
+[submodule "validator-keys-tool"]
+	path = validator-keys-tool
+	url = https://github.com/ripple/validator-keys-tool

@@ -1,0 +1,11 @@
+export KEY_TOOL_DIR=~/rippled-key-tool
+
+cd ${KEY_TOOL_DIR}
+git submodule update --init --recursive
+
+cd ${KEY_TOOL_DIR}/validator-keys-tool
+mkdir -p build/gcc.debug
+cd build/gcc.debug
+cmake ../..
+cmake --build .
+cp validator-keys ${KEY_TOOL_DIR}/bin
